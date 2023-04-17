@@ -8,8 +8,6 @@ const entrando = {
     name: nome,
 };
 
-const msgsearch1 = axios.get('https://mock-api.driven.com.br/api/vm/uol/messages')
-msgsearch1.then(msgrender);
 const nomepromise = axios.post('https://mock-api.driven.com.br/api/vm/uol/participants', entrando);
 nomepromise.then(participants);
 nomepromise.catch(Deuruim);
@@ -63,12 +61,13 @@ function sendmsg() {
 
 /*nome não está em uso*/
 function participants() {
+    setInterval(msgload, 3000);
+    setInterval(atividade, 5000);
     console.log(nomepromise)
     const chat = document.querySelector('.chat');
     chat.innerHTML += '<div class="msgstatus"  data-test="message" ><div class="user">' + entrando.name + '</div> <div class="texto">Entrou na sala</div> </div>';
     console.log(chat);
-    setInterval(msgload, 3000);
-    setInterval(atividade, 5000);
+    
 }
 
 
