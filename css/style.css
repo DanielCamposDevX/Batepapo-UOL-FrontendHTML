@@ -50,11 +50,9 @@
 /*chatbox*/
 
 .chat {
-    height: 732px;
-    margin-top: 80px;
     margin-bottom: 80px;
-    width: 100%;
     background-color: #F3F3F3;
+    max-height: px;
     margin-bottom: 80px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
     display: flex;
@@ -66,6 +64,15 @@
 .msg {
     margin-top: 15px;
     background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.msgstatus {
+    margin-top: 15px;
+    background-color: lightgray;
     width: 100%;
     display: flex;
     align-items: center;

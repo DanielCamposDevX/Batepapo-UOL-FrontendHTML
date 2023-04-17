@@ -16,19 +16,21 @@
 </head>
 
 <body>
-    <div class="menu escondido">
-        <div class="sidemenu">
-            <div class="title">Escolha um contato para enviar mensagem</div>
-            <div class="contacts">
-                <div class="all"><ion-icon class="icon" name="people"></ion-icon> Todos</div>
-                <div class="all"><ion-icon class="icon" name="person-circle"></ion-icon> João</div>
-                <div class="all"><ion-icon class="icon" name="person-circle"></ion-icon> Maria</div>
-            </div>
-            <div class="visibility">Escolha a Visibilidade:
-            </div>
-            <div class="contacts">
-                <div class="public"><ion-icon class="icon" name="lock-open"></ion-icon>Público</div>
-                <div class="private"><ion-icon class="icon" name="lock-closed"></ion-icon>Reservadamente</div>
+    <div class="page">
+        <div class="menu escondido">
+            <div class="sidemenu">
+                <div class="title">Escolha um contato para enviar mensagem</div>
+                <div class="contacts">
+                    <div class="all"><ion-icon class="icon" name="people"></ion-icon> Todos</div>
+                    <div class="all"><ion-icon class="icon" name="person-circle"></ion-icon> João</div>
+                    <div class="all"><ion-icon class="icon" name="person-circle"></ion-icon> Maria</div>
+                </div>
+                <div class="visibility">Escolha a Visibilidade:
+                </div>
+                <div class="contacts">
+                    <div class="public"><ion-icon class="icon" name="lock-open"></ion-icon>Público</div>
+                    <div class="private"><ion-icon class="icon" name="lock-closed"></ion-icon>Reservadamente</div>
+                </div>
             </div>
         </div>
     </div>
@@ -36,11 +38,8 @@
         <div class="leftop"><img src="./imagens/logo 1.png"></div>
         <div class="rightop"><button onclick=""><ion-icon name="people"></ion-icon></button></div>
     </div>
-    <div class="chat">
-        <div class="msg">
-            <div class="hour">(09:21:45)</div>
-            <div class="user">João</div>
-            <div class="texto">Blablabla aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaa a</div>
+    <div class="chatbox">
+        <div class="chat">
         </div>
     </div>
     <div class="bottom"><input class="escreva" type="text" placeholder="Escreva aqui..."> <ion-icon class="icone"
@@ -48,10 +47,10 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script href="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
