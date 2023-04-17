@@ -48,12 +48,11 @@ function sendmsg() {
         type: "message"
     }
     const promisse = axios.post('https://mock-api.driven.com.br/api/vm/uol/messages', msg);
-    promisse.then = msgload();
-    promisse.catch = window.location.reload();
+    promisse.then(msgload);
+
     msgtext = '';
 }
-
-
+ 
 
 
 
