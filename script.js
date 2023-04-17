@@ -8,6 +8,8 @@ const entrando = {
     name: nome,
 };
 
+const msgsearch1 = axios.get('https://mock-api.driven.com.br/api/vm/uol/messages')
+msgsearch1.then(msgrender);
 const nomepromise = axios.post('https://mock-api.driven.com.br/api/vm/uol/participants', entrando);
 nomepromise.then(participants);
 nomepromise.catch(Deuruim);
@@ -73,13 +75,6 @@ function participants() {
 
 /*nome está em uso*/
 function Deuruim() {
-    /*const nome = prompt('Qual é o seu nome?');
-    const entrando = {
-        name: nome,
-    };
-    const nomepromise1 = axios.post('https://mock-api.driven.com.br/api/vm/uol/participants', entrando);
-    nomepromise1.then(participants);
-    nomepromise1.catch(Deuruim);*/
     window.location.reload();
 }
 
@@ -92,4 +87,11 @@ function Deuruim() {
 function atividade() {
     const onlinepromise = axios.post('https://mock-api.driven.com.br/api/vm/uol/status', entrando);
 }
+
+
+function menu() {
+    const sidebar = document.querySelector('.menu');
+    sidebar.classList.toggle('escondido');
+}
+
 

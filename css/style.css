@@ -160,9 +160,22 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+
 /*sidebar*/
 
-.menu {
+
+.menu{
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+}
+.black {
     display: flex;
     position: fixed;
     left: 0px;
@@ -170,7 +183,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     max-height: 100%;
     height: 100%;
-    width: 100%;
+    width: 33%;
     z-index: 2;
     font-family: 'Roboto', sans-serif;
 }
